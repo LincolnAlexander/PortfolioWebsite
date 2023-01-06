@@ -4,11 +4,15 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        gradient: "url('images/PortfolioBg.jpg')",
+        gradient: "url('/src/images/BackgroundGradient.svg')",
       },
       fontFamily: {
         abel: ["Abel", "sans-serif"],
         comfortaa: ["Comfortaa", "cursive"],
+      },
+      colors: {
+        silver: "#BDBDBD",
+        black: "#000000",
       },
     },
     plugins: [require("flowbite/plugin")],
