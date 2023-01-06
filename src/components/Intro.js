@@ -10,8 +10,8 @@ function Intro() {
       "https://drive.google.com/file/d/1zQZhGUNPdaneJVog1L1xhchhaPNyOhON/view?usp=sharing",
   };
   return (
-    <div className="h-screen text-black flex justify-center items-center flex-col  ">
-      <div className="flex h-1/2 w-1/2 flex-col  ">
+    <div className="h-screen text-white flex justify-center items-center flex-col  ">
+      <div className="flex h-1/2 w-1/2 flex-col text-center ">
         <div className="mb-4">
           <p className="font-medium text-2xl md:text-3xl font-semibold">
             Hello 👋,
@@ -20,7 +20,7 @@ function Intro() {
         <div className="mb-4">
           <p className="font-medium text-4xl md:text-7xl ">
             I’m
-            <span className="font-medium text-4xl md:text-7xl text-transparent bg-clip-text font-black leading-loose bg-gradient-to-r from-indigo-400 to-silver">
+            <span className="font-medium text-4xl md:text-7xl text-transparent bg-clip-text font-black leading-loose bg-gradient-to-r from-indigo-400 to-silver ml-4">
               Lincoln
             </span>
           </p>

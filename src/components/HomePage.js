@@ -13,6 +13,7 @@ function HomePage() {
       className="flex flex-col bg-gradient bg-no-repeat bg-cover"
       id="PortfolioWebsite"
     >
+      <title>HTML Elements Reference</title>
       {/* <Nav className="fixed top-0 block"></Nav> */}
       <Navbar className=" " />
       <Intro className="" />

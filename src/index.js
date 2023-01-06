@@ -9,6 +9,7 @@ root.render(
   <React.StrictMode>
     <BrowserRouter>
       <Home></Home>
+      <title>HTML Elements Reference</title>
     </BrowserRouter>
   </React.StrictMode>
 );
