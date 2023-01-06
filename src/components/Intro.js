@@ -11,15 +11,22 @@ function Intro() {
   };
   return (
     <div className="h-screen text-black flex justify-center items-center flex-col  ">
-      <div className="flex h-1/2 w-1/2 flex-col ">
+      <div className="flex h-1/2 w-1/2 flex-col  ">
         <div className="mb-4">
-          <p className="font-medium text-4xl md:text-6xl ">Hello 👋,</p>
+          <p className="font-medium text-2xl md:text-3xl font-semibold">
+            Hello 👋,
+          </p>
         </div>
         <div className="mb-4">
-          <p className="font-medium text-4xl md:text-6xl">I’m Lincoln,</p>
+          <p className="font-medium text-4xl md:text-7xl ">
+            I’m
+            <span className="font-medium text-4xl md:text-7xl text-transparent bg-clip-text font-black leading-loose bg-gradient-to-r from-indigo-400 to-silver">
+              Lincoln
+            </span>
+          </p>
         </div>
         <div className="mb-4">
-          <p className="font-medium text-2xl md:text-4xl">
+          <p className="font-medium text-xl md:text-3xl font-semibold">
             Software Engineer, Front-end Developer 💻
           </p>
         </div>

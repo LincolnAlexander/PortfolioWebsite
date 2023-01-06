@@ -4,6 +4,8 @@ import About from "./About";
 import Nav from "./Nav";
 import Navbar from "./Navbar";
 import Intro from "./Intro";
+import Projects from "./Projects";
+import Contact from "./Contact";
 import { ReactComponent as Background } from "../images/BackgroundGradient.svg";
 function HomePage() {
   return (
@@ -15,6 +17,8 @@ function HomePage() {
       <Navbar className=" " />
       <Intro className="" />
       <About />
+      <Projects />
+      <Contact />
     </div>
   );
 }

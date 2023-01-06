@@ -9,6 +9,7 @@ module.exports = {
       fontFamily: {
         abel: ["Abel", "sans-serif"],
         comfortaa: ["Comfortaa", "cursive"],
+        inter: ["Inter", "sans-serif"],
       },
       colors: {
         silver: "#BDBDBD",
