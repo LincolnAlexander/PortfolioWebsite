@@ -2,17 +2,17 @@ import React, { useEffect, useRef, useState } from "react";
 import Bitmoji1 from "../images/Bitmoji1.png";
 function About() {
   return (
-    <div id="about" className="flex flex-col h-screen items-center text-3xl ">
-      <div className="flex flex-col justify-center w-full h-full">
-        <div className="flex justify-center">
+    <div className="flex flex-col items-center">
+      <div className="flex flex-col justify-center w-full h-full m-20 border-2">
+        <div id="about" className="flex justify-center">
           {/* <img className="" src={Bitmoji1}></img> */}
-          <p></p>
+
           <p className=" font-medium self-center  text-center text-4xl md:text-7xl text-white">
             About Me<img className="inline" src={Bitmoji1}></img>
           </p>
         </div>
 
-        <div className="flex justify-center self-center items-center w-1/2 h-1/3 mt-8 bg-violet rounded  drop-shadow-xl">
+        <div className="flex justify-center self-center items-center w-1/2 h-full bg-violet rounded drop-shadow-xl border-2">
           <p className="text-silver text-lg font-medium m-12">
             Hi! My name is Lincoln Alexander. I’m currently a junior at the
             University Central Florida studying Computer Science. I am highly
@@ -26,7 +26,20 @@ function About() {
           </p>
         </div>
       </div>
-      <div id="projects">Projects</div>
+      <div
+        className="flex flex-col justify-center items-center w-full h-full border-2 m-20"
+        id="projects"
+      >
+        <p className=" font-medium self-center text-center text-4xl md:text-7xl text-white">
+          Projects
+        </p>
+        <div className="grid grid-cols-2 border-2 h-full w-2/3 m-12">
+          <div className="col-span-2 h-96 w-96 bg-gradient border-2"></div>
+          <div className="h-96 w-96 bg-red-400"></div>
+          <div className="h-96 w-96 bg-pink-400"></div>
+          <div className="h-96 w-96 bg-gradient"></div>
+        </div>
+      </div>
     </div>
   );
 }
