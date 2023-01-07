@@ -5,6 +5,8 @@ module.exports = {
     extend: {
       backgroundImage: {
         gradient: "url('/src/images/BackgroundGradient.svg')",
+        about_bg: "url('/src/images/AboutGradient.svg')",
+        dark_bg: "url('/src/images/DarkGradient.jpg')",
       },
       fontFamily: {
         abel: ["Abel", "sans-serif"],
@@ -14,6 +16,7 @@ module.exports = {
       colors: {
         silver: "#BDBDBD",
         black: "#000000",
+        violet: "#675889",
       },
     },
     plugins: [require("flowbite/plugin")],
