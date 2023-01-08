@@ -12,7 +12,7 @@ function About() {
           </p>
         </div>
 
-        <div className="flex justify-center self-center items-center w-1/2 h-full bg-violet rounded drop-shadow-xl border-2">
+        <div className="flex justify-center self-center items-center w-screen sm:w-1/2 h-full bg-violet rounded drop-shadow-xl border-2">
           <p className="text-silver text-lg font-medium m-12">
             Hi! My name is Lincoln Alexander. I’m currently a junior at the
             University Central Florida studying Computer Science. I am highly
@@ -27,17 +27,17 @@ function About() {
         </div>
       </div>
       <div
-        className="flex flex-col justify-center items-center w-full h-full border-2 m-20"
+        className="flex flex-col justify-center items-center w-full h-full border m-20"
         id="projects"
       >
         <p className=" font-medium self-center text-center text-4xl md:text-7xl text-white">
           Projects
         </p>
-        <div className="grid grid-cols-2 border-2 h-full w-2/3 m-12">
-          <div className="col-span-2 h-96 w-96 bg-gradient border-2"></div>
-          <div className="h-96 w-96 bg-red-400"></div>
-          <div className="h-96 w-96 bg-pink-400"></div>
-          <div className="h-96 w-96 bg-gradient"></div>
+        <div className="grid grid-cols-1 lg:grid-cols-2   border-2 h-full sm:w-2/3 md:w-screen xl:w-3/4 2xl:w-1/2 m-12">
+          <div className="h-96  bg-gradient  "></div>
+          <div className="h-96 bg-red-400"></div>
+          <div className="h-96 bg-pink-400"></div>
+          <div className="h-96 bg-gradient"></div>
         </div>
       </div>
     </div>
