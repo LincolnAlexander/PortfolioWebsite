@@ -15,7 +15,7 @@ function HomePage() {
         <Navbar className="" />
         <Intro className="" />
       </div>
-      <div className="bg-gradient-to-b from-zinc-900 to-silver">
+      <div className="bg-gradient-to-b from-zinc-900 to-indigo-400">
         <About className="" />
       </div>
     </div>
