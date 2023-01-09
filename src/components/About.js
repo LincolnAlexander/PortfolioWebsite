@@ -85,14 +85,15 @@ function About() {
                 <img alt="NodeJS Logo" className="mr-4" src={NodeLogo}></img>
                 <img alt="Tailwind Logo" src={TailwindLogo}></img>
               </div>
-              <p className="text-sm sm:text-base text-silver w-5/6 m-1">
+              <p className="text-sm sm:text-base text-silver w-5/6  m-1">
                 Cinema Guesser 📀❓, a movie guessing game aimed to challenge
-                users to guess the movie score out of one hundred points. The
-                closer you are to the Rotten Tomatoes/IMDB score, the more
-                points you earn. When you aren't playing you can check the
-                leaderboard page 🥇 and add movies to your personal wacthlist
-                ➕📄! This web application was built using a MERN stack, and we
-                integrated OMDB API, Email verification, and more features.
+                users to guess the movie score out of one hundred points, given
+                details about the movie. The closer you are to the Rotten
+                Tomatoes score, the more points you earn. When you aren't
+                playing you can check the leaderboard page 🥇 and add movies to
+                your personal wacthlist ➕📄! This web application we integrated
+                OMDB API, User Authentication, Email verification, and more
+                features.
               </p>
             </div>
           </div>
