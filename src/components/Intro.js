@@ -11,8 +11,8 @@ function Intro() {
   };
   return (
     <div className="h-screen text-white flex justify-center items-center flex-col  ">
-      <div className="flex h-1/2 w-1/2 flex-col text-center ">
-        <div className="mb-4">
+      <div className="flex w-screen h-screen sm:h-1/2 sm:w-1/2 flex-col text-center mt-40 sm:mt-0">
+        <div className="mb-4 ">
           <p className="font-medium text-2xl md:text-3xl font-semibold">
             Hello 👋,
           </p>
@@ -32,25 +32,32 @@ function Intro() {
         </div>
         <div className="flex justify-center m-4 ">
           <a
-            className="w-24 md:w-16 drop-shadow-2xl transition duration-300 ease-in-out hover:scale-110 "
+            className="w-16 drop-shadow-2xl transition duration-300 ease-in-out hover:scale-110 "
             href={user.github}
             target="_blank"
+            rel="noreferrer"
           >
-            <img src={GithubLink}></img>
+            <img alt="GitHub Link" src={GithubLink}></img>
           </a>
           <a
-            className="w-24 md:w-16 mr-12 ml-12 drop-shadow-2xl transition duration-300 ease-in-out hover:scale-110"
+            className="w-16 mr-12 ml-12 drop-shadow-2xl transition duration-300 ease-in-out hover:scale-110"
             href={user.linkedin}
             target="_blank"
+            rel="noreferrer"
           >
-            <img src={LinkedInLink}></img>
+            <img alt="LinkedIn Link" src={LinkedInLink}></img>
           </a>
           <a
-            className="w-24 md:w-16 drop-shadow-2xl transition duration-300 ease-in-out hover:scale-110"
+            className="w-16 drop-shadow-2xl transition duration-300 ease-in-out hover:scale-110"
             href={user.resume}
             target="_blank"
+            rel="noreferrer"
           >
-            <img src={ResumeLink}></img>
+            <img
+              alt="Lincoln Alexander Resume"
+              src={ResumeLink}
+              title="Open Lincoln's Resume"
+            ></img>
           </a>
         </div>
       </div>

@@ -2,10 +2,17 @@ import { Fragment } from "react";
 import { Disclosure, Menu, Transition } from "@headlessui/react";
 import { Bars3Icon, BellIcon, XMarkIcon } from "@heroicons/react/24/outline";
 import AnchorLink from "react-anchor-link-smooth-scroll";
+import { HashLink as Link } from "react-router-hash-link";
 const navigation = [
   { name: "Home", href: "#", current: true },
   { name: "About", href: "#about", current: false },
   { name: "Projects", href: "#projects", current: false },
+  {
+    name: "Resume",
+    href: "https://drive.google.com/file/d/1zQZhGUNPdaneJVog1L1xhchhaPNyOhON/view?usp=sharing",
+    target: "_blank",
+    current: false,
+  },
   { name: "Contact", href: "#contact", current: false },
 ];
 
@@ -47,9 +54,11 @@ export default function Example() {
                 <div className="hidden sm:ml-6 sm:block">
                   <div className="flex space-x-4">
                     {navigation.map((item) => (
-                      <AnchorLink
+                      <Link
                         key={item.name}
-                        href={item.href}
+                        to={item.href}
+                        smooth
+                        target={item.target}
                         className={classNames(
                           item.current
                             ? "bg-gray-900 text-white"
@@ -59,7 +68,7 @@ export default function Example() {
                         aria-current={item.current ? "page" : undefined}
                       >
                         {item.name}
-                      </AnchorLink>
+                      </Link>
                     ))}
                   </div>
                 </div>
