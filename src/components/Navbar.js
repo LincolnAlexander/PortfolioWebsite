@@ -58,7 +58,6 @@ export default function Example() {
                         key={item.name}
                         to={item.href}
                         smooth
-                        target={item.target}
                         className={classNames(
                           item.current
                             ? "bg-gray-900 text-white"
