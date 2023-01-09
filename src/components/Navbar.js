@@ -7,12 +7,7 @@ const navigation = [
   { name: "Home", href: "#", current: true },
   { name: "About", href: "#about", current: false },
   { name: "Projects", href: "#projects", current: false },
-  {
-    name: "Resume",
-    href: "https://drive.google.com/file/d/1zQZhGUNPdaneJVog1L1xhchhaPNyOhON/view?usp=sharing",
-    target: "_blank",
-    current: false,
-  },
+
   { name: "Contact", href: "#contact", current: false },
 ];
 
@@ -71,7 +66,9 @@ export default function Example() {
                     ))}
                     <a
                       target="_blank"
+                      rel="noreferrer"
                       href="https://drive.google.com/file/d/1zQZhGUNPdaneJVog1L1xhchhaPNyOhON/view?usp=sharing"
+                      className="text-silver font-medium  hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
                     >
                       Resume
                     </a>
