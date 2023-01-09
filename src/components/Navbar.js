@@ -69,6 +69,12 @@ export default function Example() {
                         {item.name}
                       </Link>
                     ))}
+                    <a
+                      target="_blank"
+                      href="https://drive.google.com/file/d/1zQZhGUNPdaneJVog1L1xhchhaPNyOhON/view?usp=sharing"
+                    >
+                      Resume
+                    </a>
                   </div>
                 </div>
               </div>
