@@ -16,6 +16,8 @@ import PhpLogo from "../images/php.svg";
 import GithubLink from "../images/Github.png";
 import LinkedInLink from "../images/Linkedin.png";
 import MessageLink from "../images/Message.png";
+import CinemaBG from "../images/CinemaGuesserImage13.PNG";
+import ContactBG from "../images/ContactManagerImage2.PNG";
 
 function About() {
   const user = {
@@ -63,10 +65,13 @@ function About() {
         {/* sm:w-2/3 md:w-screen xl:w-3/4 2xl:w-1/2 */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 w-screen md:w-3/4 lg:w-4/5 2xl:w-1/2 m-12">
           <div className="flex flex-col  h-full h-128 rounded-md bg-black_1 shadow-xl bg-opacity-100">
-            <div className="flex flex-col justify-center items-center h-1/2 w-full ">
-              <div className="bg-cinema_bg bg-cover bg-cover bg-center bg-no-repeat h-5/6 w-5/6 shadow-xl rounded-xl"></div>
+            <div className="flex flex-col bg-black_1  justify-center items-center h-1/3 w-full ">
+              {/* <div className="bg-cinema_bg  bg-contain bg-center bg-no-repeat h-5/6 w-5/6 shadow-xl rounded-xl"></div> */}
+              <div className="h-5/6 w-5/6  bg-transparent rounded-xl">
+                <img className="rounded-md w-full " src={CinemaBG}></img>
+              </div>
             </div>
-            <div className="flex flex-col items-center w-full h-1/2 mb-4 ">
+            <div className="flex flex-col items-center mt-12 w-full h-1/2  mb-4 ">
               <p className="text-xl font-medium w-5/6 mb-1 text-silver">
                 CinemaGuesser
               </p>
@@ -98,10 +103,13 @@ function About() {
             </div>
           </div>
           <div className="flex flex-col  h-full h-128 rounded-md bg-black_1 shadow-xl bg-opacity-100">
-            <div className="flex flex-col justify-center items-center h-1/2 w-full ">
-              <div className="bg-contact_bg bg-cover bg-cover bg-center bg-no-repeat h-5/6 w-5/6 shadow-xl rounded-xl"></div>
+            <div className="flex flex-col bg-black_1  justify-center items-center h-1/3 w-full ">
+              {/* <div className="bg-cinema_bg  bg-contain bg-center bg-no-repeat h-5/6 w-5/6 shadow-xl rounded-xl"></div> */}
+              <div className="h-5/6 w-5/6  bg-transparent rounded-xl">
+                <img className=" w-full rounded-md " src={ContactBG}></img>
+              </div>
             </div>
-            <div className="flex flex-col items-center w-full h-1/2 mb-4 ">
+            <div className="flex flex-col items-center  w-full h-1/2 mt-12 mb-4 ">
               <p className="text-xl font-medium w-5/6 mb-1 text-silver">
                 Contacts4U
               </p>

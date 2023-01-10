@@ -7,8 +7,8 @@ module.exports = {
         gradient: "url('/src/images/BackgroundGradient.svg')",
         about_bg: "url('/src/images/AboutGradient.svg')",
         dark_bg: "url('/src/images/DarkGradient.jpg')",
-        contact_bg: "url('/src/images/ContactManagerImage.PNG')",
-        cinema_bg: "url('/src/images/CinemaGuesserImage12.PNG')",
+        contact_bg: "url('/src/images/ContactManagerImage1.PNG')",
+        cinema_bg: "url('/src/images/CinemaGuesserImage13.PNG')",
       },
       fontFamily: {
         abel: ["Abel", "sans-serif"],
