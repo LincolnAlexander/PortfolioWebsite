@@ -1,5 +1,7 @@
-// /** @type {import('tailwindcss').Config} */
-module.exports = {
+/** @type {import('tailwindcss').Config} */
+const { withAnimations } = require("animated-tailwindcss");
+
+module.exports = withAnimations({
   content: ["./src/**/*.{html,js}", "./node_modules/flowbite/**/*.js"],
   theme: {
     extend: {
@@ -27,4 +29,4 @@ module.exports = {
     },
     plugins: [require("flowbite/plugin")],
   },
-};
+});

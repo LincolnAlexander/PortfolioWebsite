@@ -1,4 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
+import { useInView } from "react-intersection-observer";
 import Bitmoji1 from "../images/Bitmoji1.png";
 import Bitmoji2 from "../images/studying.png";
 import Bitmoji3 from "../images/Bitmoji3.png";
@@ -25,12 +26,34 @@ function About() {
     github: "https://github.com/LincolnAlexander",
     mail: "mailto: lincolndalexander@gmail.com",
   };
+
+  let [ref, inView] = useInView();
+  let [ref1, inView1] = useInView();
+  let [ref2, inView2] = useInView();
+
+  useEffect(() => {
+    if (inView) inView = false;
+  }, [inView]);
+
+  useEffect(() => {
+    if (inView1) inView1 = false;
+  }, [inView1]);
+
+  useEffect(() => {
+    if (inView2) inView2 = false;
+  }, [inView2]);
   return (
     <div className="flex flex-col items-center">
       <div className="flex flex-col justify-center w-full h-full m-20 ">
-        <div id="about" className="flex justify-center">
-          {/* <img className="" src={Bitmoji1}></img> */}
-
+        <div
+          ref={ref}
+          id="about"
+          className={
+            inView === true
+              ? "animate-pulse flex justify-center"
+              : "flex justify-center"
+          }
+        >
           <p className=" font-medium self-center  text-center text-4xl md:text-7xl text-white">
             About Me
             <img
@@ -41,8 +64,20 @@ function About() {
           </p>
         </div>
 
-        <div className="flex justify-center self-center items-center w-screen md:w-2/3 xl:w-1/2 h-full bg-black_1 rounded drop-shadow-xl ">
-          <p className="text-silver text-lg font-medium m-12">
+        <div
+          className={
+            inView === true
+              ? " flex justify-center self-center items-center w-screen md:w-2/3 xl:w-1/2 h-full bg-black_1 rounded drop-shadow-xl animate-fadeInUp"
+              : "flex justify-center self-center items-center w-screen md:w-2/3 xl:w-1/2 h-full bg-black_1 rounded drop-shadow-xl "
+          }
+        >
+          <p
+            className={
+              inView === true
+                ? "text-silver text-lg font-medium m-12"
+                : "text-silver text-lg font-medium m-12"
+            }
+          >
             Hi! My name is Lincoln Alexander. I’m currently a junior at the
             University Central Florida studying Computer Science. I am highly
             passionate about software engineering, and problem-solving, and have
@@ -56,15 +91,28 @@ function About() {
         </div>
       </div>
       <div
-        className="flex flex-col justify-center items-center w-full h-full  m-20"
+        className="flex flex-col justify-center items-center w-full h-full  m-28"
         id="projects"
       >
-        <p className=" font-medium self-center text-center text-4xl md:text-7xl text-white">
+        <p
+          className={
+            inView1 === true
+              ? "animate-zoomIn font-medium self-center text-center text-4xl md:text-7xl text-white"
+              : "font-medium self-center text-center text-4xl md:text-7xl text-white"
+          }
+        >
           Projects
         </p>
         {/* sm:w-2/3 md:w-screen xl:w-3/4 2xl:w-1/2 */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 w-screen md:w-3/4 lg:w-4/5 2xl:w-1/2 m-12">
-          <div className="flex flex-col  h-full h-128 rounded-md bg-black_1 shadow-xl bg-opacity-100">
+          <div
+            ref={ref1}
+            className={
+              inView1 === true
+                ? "animate-fadeInLeft flex flex-col  h-full h-128 rounded-md bg-black_1 shadow-xl bg-opacity-100"
+                : "flex flex-col  h-full h-128 rounded-md bg-black_1 shadow-xl bg-opacity-100"
+            }
+          >
             <div className="flex flex-col bg-black_1  justify-center items-center h-1/3 w-full ">
               {/* <div className="bg-cinema_bg  bg-contain bg-center bg-no-repeat h-5/6 w-5/6 shadow-xl rounded-xl"></div> */}
               <div className="h-5/6 w-5/6  bg-transparent rounded-xl">
@@ -102,7 +150,13 @@ function About() {
               </p>
             </div>
           </div>
-          <div className="flex flex-col  h-full h-128 rounded-md bg-black_1 shadow-xl bg-opacity-100">
+          <div
+            className={
+              inView1 === true
+                ? "animate-fadeInRight flex flex-col  h-full h-128 rounded-md bg-black_1 shadow-xl bg-opacity-100"
+                : "flex flex-col  h-full h-128 rounded-md bg-black_1 shadow-xl bg-opacity-100"
+            }
+          >
             <div className="flex flex-col bg-black_1  justify-center items-center h-1/3 w-full ">
               {/* <div className="bg-cinema_bg  bg-contain bg-center bg-no-repeat h-5/6 w-5/6 shadow-xl rounded-xl"></div> */}
               <div className="h-5/6 w-5/6  bg-transparent rounded-xl">
@@ -138,11 +192,20 @@ function About() {
         className="flex flex-col justify-center items-center w-full h-full  m-20"
         id="contact"
       >
-        <p className=" font-medium self-center text-center text-4xl md:text-7xl text-white mb-12">
+        <p
+          className={
+            inView2 === true
+              ? "animate-slideInDown font-medium self-center text-center text-4xl md:text-7xl text-white mb-12"
+              : "font-medium self-center text-center text-4xl md:text-7xl text-white mb-12 "
+          }
+        >
           Contact
         </p>
-        <div className="flex flex-col justify-center self-center items-center w-screen md:w-2/3 xl:w-1/2 h-full bg-black_1 rounded drop-shadow-xl ">
-          <div className="">
+        <div
+          ref={ref2}
+          className="flex flex-col justify-center self-center items-center w-screen md:w-2/3 xl:w-1/2 h-full bg-black_1 rounded drop-shadow-xl "
+        >
+          <div className={inView2 === true ? "animate-slideInUp" : ""}>
             <p className="text-silver  text-lg font-medium m-12  ">
               I'm currently looking for a Summer 23' Internship, and also open
               to working on small/medium projects. I have excellent
@@ -152,7 +215,7 @@ function About() {
             </p>
             <div className="flex justify-center m-8">
               <a
-                className="w-16  drop-shadow-2xl transition duration-300 ease-in-out hover:scale-110"
+                className="w-16  drop-shadow-2xl transition duration-300 ease-in-out hover:animate-tada"
                 href={user.mail}
                 target="_blank"
                 rel="noreferrer"
@@ -160,7 +223,7 @@ function About() {
                 <img alt="Email Link" src={MessageLink}></img>
               </a>
               <a
-                className="w-16 mr-12 ml-12 drop-shadow-2xl transition duration-300 ease-in-out hover:scale-110 "
+                className="w-16 mr-12 ml-12 drop-shadow-2xl transition duration-300 ease-in-out hover:animate-tada "
                 href={user.github}
                 target="_blank"
                 rel="noreferrer"
@@ -168,7 +231,7 @@ function About() {
                 <img alt="GitHub Link" src={GithubLink}></img>
               </a>
               <a
-                className="w-16  drop-shadow-2xl transition duration-300 ease-in-out hover:scale-110"
+                className="w-16  drop-shadow-2xl transition duration-300 ease-in-out hover:animate-tada"
                 href={user.linkedin}
                 target="_blank"
                 rel="noreferrer"
