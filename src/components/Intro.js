@@ -9,7 +9,7 @@ function Intro() {
     linkedin: "https://www.linkedin.com/in/lincoln-alexander-2312ab193/",
     github: "https://github.com/LincolnAlexander",
     resume:
-      "https://drive.google.com/file/d/1zQZhGUNPdaneJVog1L1xhchhaPNyOhON/view?usp=sharing",
+      "https://drive.google.com/file/d/1eUG4VCQ2uKum3H1znBT9XA9FqwCRTvu2/view?usp=sharing",
   };
 
   let [ref, inView] = useInView();

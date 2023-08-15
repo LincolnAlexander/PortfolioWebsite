@@ -1,0 +1,9 @@
+https://blog.logrocket.com/deploying-react-apps-github-pages/#:~:text=With%20just%20a%20few%20steps,Pages%20for%20our%20static%20website.
+
+https://github.com/brc-dd/animated-tailwindcss/blob/main/docs/installation.md
+
+https://blog.logrocket.com/react-scroll-animations-framer-motion/
+
+https://tailwindcss.com/docs/width
+
+https://animate.style/#documentation
