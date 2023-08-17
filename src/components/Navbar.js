@@ -67,7 +67,7 @@ export default function Example() {
                     <a
                       target="_blank"
                       rel="noreferrer"
-                      href="https://drive.google.com/file/d/1zQZhGUNPdaneJVog1L1xhchhaPNyOhON/view?usp=sharing"
+                      href="https://drive.google.com/file/d/1eUG4VCQ2uKum3H1znBT9XA9FqwCRTvu2/view?usp=sharing"
                       className="text-silver font-medium  hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
                     >
                       Resume

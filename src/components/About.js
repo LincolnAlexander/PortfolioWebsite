@@ -18,6 +18,7 @@ import MessageLink from "../images/Message.png";
 import CinemaBG from "../images/CinemaGuesserImage13.PNG";
 import ContactBG from "../images/ContactManagerImage2.PNG";
 import LargeVerticalCard from "./LargeVerticalCard";
+import CaboodleBG from "../images/CaboodleScreenshot.PNG";
 
 function About() {
   const user = {
@@ -84,8 +85,7 @@ function About() {
             in multiple programming languages including: Java, C, JavaScript,
             React, HTML & CSS. I like to extend myself to learn other skills
             such as: Figma, Canva, and frameworks. In my free time I enjoy
-            practicing my programming skills with different projects, and
-            listening to Music 🎧.{" "}
+            watching a good movie or listening to Music 🎧.{" "}
           </p>
         </div>
       </div>
@@ -102,7 +102,7 @@ function About() {
         >
           Projects
         </p>
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 w-screen md:w-3/4 lg:w-4/5 2xl:w-1/2 m-12">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 w-screen md:w-3/4 lg:w-4/5 2xl:w-1/2 m-12 ">
           <LargeVerticalCard
             projectScreenshot={CinemaBG}
             projectTitle="CinemaGuesser"
@@ -140,7 +140,24 @@ function About() {
             to add/delete and edit contact details, and search for contacts by
             name.
           </LargeVerticalCard>
-          <LargeVerticalCard></LargeVerticalCard>
+          <LargeVerticalCard
+            projectScreenshot={CaboodleBG}
+            projectTitle="Caboodles"
+            projectIcons={[
+              MongodbLogo,
+              ExpressLogo,
+              ReactLogo,
+              NodeLogo,
+              CssLogo,
+            ]}
+          >
+            Effortlessly curate and manage your wish lists, shopping list, and
+            inspiration boards 📝. Caboodles is a full stack mern project that
+            allows users to store information on items they want to buy. Why
+            create multiple accounts across dozens of websites when you can use
+            one platform to store all your wants and needs. This web application
+            features jwt tokens, password encryption, and image uploadling.
+          </LargeVerticalCard>
         </div>
       </div>
       <div
@@ -162,11 +179,11 @@ function About() {
         >
           <div className={inView2 === true ? "animate-slideInUp" : ""}>
             <p className="text-silver  text-lg font-medium m-12  ">
-              I'm currently looking for a Summer 23' Internship, and also open
-              to working on small/medium projects. I have excellent
-              communication skills for working with both technical and
-              non-technical stakeholders. I have strong problem solving and
-              debugging skills and work well in teams.{" "}
+              I'm currently looking for a Spring 24' part time position, and am
+              applying to full time positions as I graduate May 24'. I have
+              excellent communication skills that will be helpful in any system
+              I am placed in. I have strong problem solving and debugging skills
+              and work well in teams.{" "}
             </p>
             <div className="flex justify-center m-8">
               <a
