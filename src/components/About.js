@@ -155,7 +155,7 @@ function About() {
             inspiration boards 📝. Caboodles is a full stack mern project that
             allows users to store information on items they want to buy. Why
             create multiple accounts across dozens of websites when you can use
-            one platform to store all your wants and needs. This web application
+            one platform to store all your wants and needs? This web application
             features jwt tokens, password encryption, and image uploadling.
           </LargeVerticalCard>
         </div>
@@ -179,8 +179,8 @@ function About() {
         >
           <div className={inView2 === true ? "animate-slideInUp" : ""}>
             <p className="text-silver  text-lg font-medium m-12  ">
-              I'm currently looking for a Spring 24' part time position, and am
-              applying to full time positions as I graduate May 24'. I have
+              I'm currently looking for a Spring '24 part time position, and am
+              applying to full time positions as I graduate May '24. I have
               excellent communication skills that will be helpful in any system
               I am placed in. I have strong problem solving and debugging skills
               and work well in teams.{" "}
